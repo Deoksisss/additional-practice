@@ -31,7 +31,8 @@ foreach (var prop in properties)
     }
     else
     {
-        throw new ArgumentException("many accessors");
+        Console.WriteLine("null or many accessors");
+        break;
     }
     
     writer.WriteLine($"{propName};{type};{accessors}");
